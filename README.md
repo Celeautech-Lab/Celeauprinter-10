@@ -1,6 +1,6 @@
 # Celeauprinter-10
 
-**Continuous 3D printer featuring a flying CoreXY Z-gantry, conveyor belt bed for serial production, and industrial 5 kg spool feed.**
+**Continuous 3D printer featuring a flying CoreXY Z-gantry, conveyor belt bed for serial production.**
 
 ![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)
 ![Firmware: Klipper](https://img.shields.io/badge/Firmware-Klipper-orange.svg)
