@@ -8,7 +8,7 @@ This bill of materials lists each item using its **CAD Tree Reference** and **St
 
 All custom `CELEAUTECH` 3D-printed parts are designed to be printed in **ASA** for thermal and mechanical resistance, except the four `FOOT` parts. Print `FOOT` (quantity 4) in **TPU 64D** (recommended) or **TPU 95A**, using sufficient infill to damp vibrations.
 
-> **Important Note — 3 mm planar-part alternative:** Several flat, 3 mm structural/mechanical parts designed to be printed in ASA were initially considered for laser cutting in acrylic (PMMA); that option was discarded because of brittleness under vibration and screw-clamping loads. Standard CO2 laser cutting in **3 mm POM-C (Acetal / Delrin)**, or in **High-Impact Acrylic**, is a viable mechanical and thermal alternative to ASA printing. The author has **not tested** the POM-C laser-cutting option. Feedback and contributions from builders who test it are very welcome. Confirm each part’s geometry and fit before substituting a cut part for a printed one.
+> **Important Note — 3 mm planar-part alternative:** Several flat, 3 mm structural/mechanical parts designed to be printed in ASA were initially considered for laser cutting in acrylic (PMMA); that option was discarded because of brittleness under vibration and screw-clamping loads. Standard CO2 laser cutting in **3 mm POM-C (Acetal / Delrin)**, or in **High-Impact Acrylic**, is a viable mechanical and thermal alternative to ASA printing. Celeautech has **not tested** the POM-C laser-cutting option. Feedback and contributions from builders who test it are very welcome. Confirm each part’s geometry and fit before substituting a cut part for a printed one.
 
 ### Filament handling and 5 kg spools
 
