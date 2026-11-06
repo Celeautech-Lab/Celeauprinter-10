@@ -1,0 +1,100 @@
+==============================================================================
+COMMERCIAL LICENSING, THIRD-PARTY CAD & MANUFACTURING PARTNERSHIPS
+==============================================================================
+This hardware repository contains two distinct categories of files and designs,
+as detailed in the project's Bill of Materials (BOM.md):
+
+1. THIRD-PARTY / OFF-THE-SHELF CAD MODELS (`ORIGINAL_FILE_LICENSE`):
+   Standard off-the-shelf (COTS) components sourced from external repositories
+   (such as GrabCAD, manufacturer libraries, or other open-source projects)
+   remain fully subject to their respective original licenses and copyrights.
+   CeleauTech claims no ownership over these third-party models.
+
+2. CUSTOM CELEAUTECH DESIGNS (`CELEAUTECH`):
+   All custom-designed parts, assemblies, 3D printing files, 2D laser/CNC
+   cutting plans, schematics, and documentation stamped or listed as
+   `CELEAUTECH` are provided for personal, maker, and non-commercial purposes
+   only under the Creative Commons Attribution-NonCommercial 4.0 International
+   License (CC BY-NC 4.0) summarized below.
+
+YOU ARE FREE TO:
+- Build the Celeauprinter-10 for yourself, your lab, or as a free gift.
+- Fabricate the custom `CELEAUTECH` parts (3D printing, laser cutting, CNC)
+  for your own personal build.
+- Modify and adapt the custom files for non-commercial use.
+- Share your build or remixes (with proper attribution to CeleauTech).
+
+STRICTLY PROHIBITED WITHOUT WRITTEN AGREEMENT:
+- Selling the custom `CELEAUTECH` digital files (CAD, STEP, DXF, 3MF, STL,
+  schematics, or documentation).
+- Manufacturing and selling physical kits, printed part sets, laser-cut panels,
+  or fully assembled 3D printers based on the `CELEAUTECH` design.
+- Using the custom `CELEAUTECH` designs for commercial manufacturing of
+  printers or hardware kits without a prior commercial license.
+
+For commercial licensing, kit manufacturing rights, or partnerships, contact:
+Antoine Navarro EI (CeleauTech) — celeautech.contact@gmail.com
+==============================================================================
+
+Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+Official Legal Code: https://creativecommons.org/licenses/by-nc/4.0/legalcode
+
+Copyright (c) 2026 Antoine Navarro EI (CeleauTech). All rights reserved on all
+custom `CELEAUTECH` materials.
+
+------------------------------------------------------------------------------
+Legal Code Summary & Core Terms (Applicable to `CELEAUTECH` Material):
+------------------------------------------------------------------------------
+
+1. Definitions
+- "Licensed Material" means the custom artistic, literary, or engineering work
+  (including custom `CELEAUTECH` 3D models, 2D technical drawings, CAD
+  sub-assemblies, and documentation) to which the Licensor applied this Public
+  License, expressly excluding third-party COTS models (`ORIGINAL_FILE_LICENSE`).
+- "NonCommercial" means not primarily intended for or directed toward
+  commercial advantage or monetary compensation.
+- "Adapted Material" means material subject to Copyright and Similar Rights
+  that is derived from or based upon the Licensed Material.
+
+2. Scope of License (Subject to the terms and conditions of this License)
+The Licensor hereby grants You a worldwide, royalty-free, non-sublicensable,
+non-exclusive, irrevocable license to exercise the Licensed Rights in the
+Licensed Material to:
+  a. reproduce and Share the Licensed Material, in whole or in part, for
+     NonCommercial purposes only; and
+  b. produce, reproduce, and Share Adapted Material for NonCommercial
+     purposes only.
+
+3. Attribution Condition (BY)
+If You Share the Licensed Material (including in physical or modified form),
+You must:
+  a. retain the following identification:
+     Creator: Antoine Navarro EI (CeleauTech)
+     Copyright Notice: Copyright (c) 2026 Antoine Navarro EI
+     License Notice: Licensed under CC BY-NC 4.0
+  b. indicate if You modified the Licensed Material; and
+  c. include a URI or hyperlink to the Licensed Material to the extent
+     reasonably practicable.
+
+4. Disclaimer of Warranties and Limitation of Liability
+Unless otherwise separately undertaken by the Licensor, to the extent
+possible, the Licensor offers the Licensed Material as-is and as-available,
+and makes no representations or warranties of any kind concerning the
+Licensed Material, whether express, implied, statutory, or other. This
+includes, without limitation, warranties of title, merchantability, fitness
+for a particular purpose, non-infringement, absence of latent or other
+defects, accuracy, or the presence or absence of errors, whether or not
+known or discoverable.
+
+Note on 3D Printer Safety: This project involves mains voltage (230V/110V),
+high-power DC supplies (600W), heating elements, and moving mechanical parts.
+You build and operate this machine entirely at your own risk.
+
+To the extent possible, in no event will the Licensor be liable to You on
+any legal theory (including, without limitation, negligence) or otherwise
+for any direct, special, indirect, incidental, consequential, punitive,
+exemplary, or other losses, costs, expenses, or damages arising out of this
+Public License or use of the Licensed Material.
+
+Full Legal Code available at:
+https://creativecommons.org/licenses/by-nc/4.0/legalcode.txt
