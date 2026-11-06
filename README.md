@@ -36,6 +36,7 @@ The **CeleauPrinter-10** is an open-access additive manufacturing machine engine
 
 - **Kinematics**: **Flying CoreXY gantry** handling X, Y, and Z motion. The frame travels vertically along 16 mm hardened shafts driven by dual lead screws, carrying the full CoreXY plane.
 - **Static bed with automated ejection**: The heated bed does not move in 3D space. It is wrapped in a high-temperature conveyor belt driven by an independent stepper motor, allowing parts to clear the print surface automatically after cooling.
+- **High-flow Volcano extrusion system**: Extended melt-zone Volcano-style hotend coupled with a high-power 70 W heater cartridge and an all-metal direct-drive setup. Designed for high volumetric throughput with large nozzles (up to 1.2 mm) for rapid serial manufacturing of functional parts, while retaining backwards compatibility with standard 0.4–0.6 mm nozzles.
 - **Industrial feed**: Designed without a frame-mounted spool holder. The system interfaces directly with active multi-kilo filament dryers to feed large 5 kg industrial spools.
 - **Electronics bay**: Integrated side-mounted power panel hosting industrial safety mechanisms, dedicated high-power MOSFETs, and isolated control boards.
 
@@ -67,7 +68,7 @@ All design files, bills of materials, and assembly documentation are open for pe
 | **Build volume (X × Y × Z)** | ~220 × 220 × ~250 mm (standard bed footprint, infinite ejection axis) |
 | **Motion system** | MGN12H linear rails on X/Y, dual 16 mm linear shafts (SK16 / LM16UU) on Z |
 | **Bed system** | Static flat bed with continuous conveyor belt and NEMA 17 drive |
-| **Extrusion** | All-metal BMG dual-drive extruder, direct-drive configuration |
+| **Extrusion** | All-metal BMG dual-drive extruder, Volcano-style high-flow hotend with 70 W heater cartridge (compatible with 0.4–0.6 mm detail nozzles up to 1.2 mm structural nozzles) |
 | **Filament management** | BTT SFS V2.0 smart filament sensor, tuned for 5 kg spools via active dryer |
 | **Control electronics** | BigTreeTech Octopus V1.0 + SBC host (Raspberry Pi or compatible) |
 | **Power and safety** | Industrial power supply, external dual MOSFET switches, rotary emergency stop (E-stop) |
