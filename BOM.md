@@ -145,7 +145,7 @@ There is intentionally **no spool holder in this BOM**. The printer is designed 
 | 74 | `DISSIPADOR (VALOR PREDETERMINADO)` | **HEATSINK** | 1 | Standard off-the-shelf component. |
 | 75 | `HOTEND` | **HOTEND** | 1 | Standard off-the-shelf component. |
 | 76 | `BICO 0.4MM (VALOR PREDETERMINADO)` | **NOZZLE_0_4MM** | 1 | Standard off-the-shelf component. |
-
+| 76b | `NOT_MODELED_IN_CAD` | **HEATER_CARTRIDGE_24V_70W** | 1 |  Standard off-the-shelf component. |
 ---
 
 ## 9. Custom Fabricated Parts — Belt Bed System
