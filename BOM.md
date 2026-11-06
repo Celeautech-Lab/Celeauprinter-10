@@ -215,3 +215,15 @@ CELEAUTECH custom parts: fabricate from the project files; print in ASA.
 | 108 | `NOZZLE_FAN_SUPPORT` | **NOZZLE_FAN_SUPPORT** | 1 | Custom CELEAUTECH 3D-printed part; print in ASA for thermal and mechanical resistance. |
 
 ---
+
+## 13. Pending Sourcing & Cut-to-Length Items
+
+>**Notice — Belts, Conveyor Loop & PTFE Tubing:**  
+> You will notice that specific drive belts, the bed conveyor belt loop, and PTFE guide tubes are **intentionally not itemized** in the current BOM tables above.  
+> 
+> - **Motion Belts (GT2 10 mm):** Exact cut lengths for the CoreXY gantry and the conveyor drive loop will be physically measured and specified once the prototype frame is fully squared and tensioners are assembled.
+> - **PTFE Reverse Bowden Tubing (OD 4 mm / ID 2 mm):**
+>   - **Internal segment:** The fixed link between the Smart Filament Sensor (BTT SFS V2.0) and the toolhead extruder inlet requires dynamic routing validation along the flying Z-gantry travel to determine optimal strain relief and length.
+>   - **External feed segment:** The tube leading into the SFS inlet is dependent on the end-user's physical workshop layout and the placement of their active filament dryer (e.g., *Creality Multi-kilo Dryer*).
+>
+> Exact procurement lengths, recommended conveyor belt materials (e.g., seamless composite/silicone/Kapton bands), and cut guidelines will be appended here during the physical build log update.
