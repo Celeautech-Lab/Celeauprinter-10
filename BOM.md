@@ -179,9 +179,6 @@ CELEAUTECH custom parts: fabricate from the project files; print in ASA unless t
 | 90 | `Z_BEARING_SUPPORT_BIS` | **Z_BEARING_SUPPORT_BIS** | 4 | Custom CELEAUTECH 3D-printed part; print in ASA for thermal and mechanical resistance. |
 | 91 | `Z_AXIS_MOTOR_SUPPORT` | **Z_AXIS_MOTOR_SUPPORT** | 2 | Custom CELEAUTECH 3D-printed part; print in ASA for thermal and mechanical resistance. |
 | 92 | `Z_NUT_SUPPORT` | **Z_NUT_SUPPORT** | 2 | Custom CELEAUTECH 3D-printed part; print in ASA for thermal and mechanical resistance. |
-
-> **Laser-Cut / Panel — ELECTRONICS_PANEL:** Laser-cut this dedicated panel in MDF, or adapt it for laser/CNC cutting in aluminum sheet.
-
 | 93 | `ELECTRONICS_PANEL` | **ELECTRONICS_PANEL** | 1 | CELEAUTECH custom panel; laser-cut in MDF or adapt for laser/CNC cutting in aluminum sheet. |
 | 94 | `POWER_SUPPLY_CARTER` | **POWER_SUPPLY_COVER** | 1 | Custom CELEAUTECH 3D-printed part; print in ASA for thermal and mechanical resistance. |
 | 95 | `Z_ENDSTOP_SUPPORT` | **Z_ENDSTOP_SUPPORT** | 1 | Custom CELEAUTECH 3D-printed part; print in ASA for thermal and mechanical resistance. |
