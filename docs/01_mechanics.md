@@ -2,64 +2,101 @@
 
 **CeleauPrinter 10 — Structure, sub-assemblies and mechanical assembly**
 
-> **Status:** content plan. The full version of this guide will be published together with the project's assembly documentation. This file describes what the guide will cover; it does not yet contain a step-by-step procedure.
+> **Status:** Complete (Assembly Sequence & Critical Points). Intended for experienced makers and engineers. Refer to the repository's STEP/CAD files and the BOM for exact fastener sizes, part references, and detailed geometry.
 
 ---
 
 ## About this guide
 
-This booklet covers the **mechanical** part of the CeleauPrinter 10: what the machine contains, how its sub-assemblies relate to each other, and the check points that accompany every assembly phase. It is written for the person who assembles the machine, prepares the parts and carries out the first mechanical adjustments.
+This booklet covers the **mechanical assembly** of the CeleauPrinter 10: build order, critical integration steps, and mechanical checks before power-up.
 
-**Purpose of this document:** to explain the content that will be published in this guide once the project's assembly documentation is available. This is not yet a step-by-step tutorial: procedures, setting values, tolerances and detailed fastening points will be added in the final version of the booklet.
+**Target audience:** Experienced makers. Rather than a screw-by-screw tutorial, this guide focuses on the **correct assembly sequence** (to avoid painting yourself into a corner) and key mechanical tolerances. Keep the **3D CAD / STEP assembly** open alongside this document and rely on it for all exact part orientations and fastener details.
 
-### Objectives
+### Key Specifications
+- **Build Volume:** `230 × 230 × 250 mm` (X/Y footprint based on a standard Ender 3 bed).
+- **Kinematics:** Flying CoreXY Z-gantry on linear guides and leadscrews.
+- **Extrusion:** All-metal BMG dual-drive + Volcano-style hotend (70 W heater).
+- **Bed:** Continuous conveyor belt bed *(Note: mechanical assembly is documented here, but continuous printing operation is still pending validation)*.
 
-- Give an overview of the structure, its sub-assemblies and their interfaces.
-- Explain the role of each family of parts and the checks that go with them.
-- Set out the assembly order that will be detailed in the final documentation.
-- Gather the preparation conditions (parts, tooling, workstation) to validate before the first screw.
-- Serve as the basis for the mandatory mechanical review before any power-up.
+---
 
 ## Prerequisites — check points before you start
 
-Before opening this booklet, validate the following points:
+Before starting the build, validate the following points:
 
-- [ ] The **main README** of the repository has been read: project overview, parts nomenclature and safety warnings.
-- [ ] The **bill of materials (BOM)** and the **fabrication drawings** (STEP, STL or 3MF) matching the hardware you own have been retrieved in the correct version.
-- [ ] The **tooling** announced in the project documentation is available and checked (fastening, measuring, tensioning, cutting).
-- [ ] The parts have been **removed from their supports**, then **visually inspected** (cracks, play, gaps) before assembly.
-- [ ] The **orientation marks** have been identified on every part (slots, holes, reference faces).
-- [ ] The workstation is **flat, stable and protected**, and small parts (screws, nuts, spacers) are sorted into dedicated containers.
-- [ ] You have an **assembly drawing open** (STEP view or equivalent) to check the position of each part.
+- [ ] The **main README** and **BOM** have been reviewed.
+- [ ] The **STEP / STL / 3MF** files matching your hardware are open in your CAD viewer.
+- [ ] Printed parts have been **removed from supports**, deburred, and visually inspected for cracks or dimensional issues.
+- [ ] All fasteners, linear guides, leadscrews, and extrusions are sorted and measured.
+- [ ] The workstation is **flat, stable, and protected** (essential for squaring the main frame).
 
-## Plan of the booklet
+---
 
-The final version will be organised into the following chapters, in this order:
+## Assembly Sequence
 
-1. **Overview of the structure** — mechanical architecture, major sub-assemblies and how they fit together.
-2. **Parts inventory and preparation** — matching the nomenclature to the parts actually delivered, dimensional inspection and preparation of the printed parts.
-3. **Assembly of the main structure** — order of assembly for the frame, how the panels and brackets are joined, and the intermediate check points.
-4. **Moving sub-assemblies and guidance** — assembling the moving sub-assemblies, the guides and the available travel.
-5. **Transmission and drive** — role of the transmission, fitting the pulleys, the belt and the associated fasteners.
-6. **Tensioning, alignment and adjustment** — principles of tensioning and alignment, adjustment points and the values to record in the final version.
-7. **Final fastening and accessories** — screws, spacers, cable chains, sleeving and finishing accessories, plus the tightening values to record.
-8. **Mechanical review before power-up** — final check of play, freedom of movement and assembly conformity.
+Follow this exact order to avoid having to disassemble sub-assemblies later. **For every step below, refer to the CAD/STEP assembly for exact fastener sizes, part orientations, and mounting locations.**
+
+### 1. Flying CoreXY Z-Gantry
+Assemble the flying gantry as an independent sub-assembly first (refer to the CAD for bracket orientation and belt routing):
+- Build the CoreXY frame, corner brackets, and XY motor mounts.
+- Install the linear guides/carriages and the **BMG dual-drive + Volcano** toolhead carriage.
+- Route and lightly tension the CoreXY belts (leave final fine-tuning for step 5).
+- **Check:** Verify that the XY carriage moves smoothly across the full `230 × 230 mm` travel without binding.
+
+![Flying CoreXY Z-Gantry CAD](../images/cad_flying_gantry.png)
+
+### 2. Conveyor Belt Bed Assembly
+> **Note:** The conveyor belt mechanism is mechanically assembled at this stage, though its long-term continuous operation has not yet been validated under print loads.
+
+Refer to the CAD for roller spacing, bearing seats, and bracket placement:
+- Assemble the bed frame, drive/idler rollers, and belt tensioning mounts.
+- Install the continuous conveyor belt around the rollers.
+- **Check:** Ensure the rollers are parallel to each other and apply light, even tension so the belt tracks straight without drifting to either side when rotated by hand.
+
+### 3. Main Chassis & Gantry Integration
+**Critical step — do not fully close the frame before inserting the flying gantry.** Refer to the CAD for extrusion lengths, gusset positions, and linear guide alignment:
+- Assemble the base and vertical extrusions of the main chassis on a flat reference surface, checking for squareness.
+
+![Main Chassis Ready for Gantry](../images/cad_chassis_open.png)
+
+- **Insert the Flying CoreXY Z-gantry** onto the vertical linear guides and **thread it onto the Z trapezoidal leadscrews** *before* locking the top frame members in place.
+- Install the conveyor belt bed sub-assembly into the main chassis.
+- Secure the top frame extrusions and perform a final squareness check on the entire structure.
+
+![Completed Main Chassis with Gantry](../images/cad_chassis_complete.png)
+
+### 4. Electronics Mounting Plates & Boards
+Refer to the CAD for mounting plate placement and board hole patterns:
+- Mount the electronics support plates onto the main chassis.
+- Fasten the mainboards, power supply, and **BTT SFS V2.0** filament runout/motion sensor (positioned along the path from the 5 kg spool holder to the extruder).
+- **Note:** Keep wiring disconnected during this step; electrical connections are covered in [Guide 02 — Electronics](02_electronics.md).
+
+![Complete Printer — Electronics Plate POV](../images/cad_electronics_pov.png)
+
+### 5. Final Mechanical Review (Before Power-Up)
+- **PTFE & Filament Path:** Cut and route the PTFE tube cleanly from the 5 kg spool feed / SFS V2.0 sensor to the BMG extruder, avoiding sharp bends (check CAD clearances).
+- **Belt Tension:** Finalize CoreXY belt tension (equal tension on both A/B belts) and Z-axis alignment.
+- **Travel & Clearances:** Manually move X, Y, and Z across the full `230 × 230 × 250 mm` envelope. Verify there are no collisions with the frame, electronics plates, or conveyor rollers.
+- **Fasteners:** Double-check all structural screws, pulley grub screws, and leadscrew couplers.
+
+---
 
 ## Out of scope for this document
 
-To avoid any confusion while reading:
+- **Screw-by-screw CAD references** (refer directly to the STEP assembly).
+- **Wiring diagrams and pinouts** → [Guide 02 — Electronics](02_electronics.md).
+- **Firmware configuration (Klipper/Marlin)** → [Guide 03 — Software](03_software.md).
+- **Conveyor belt calibration & first print tuning** → [Guide 04 — First print and operation](04_first_print_ops.md).
 
-- The **detailed assembly procedures**, which will accompany the project documentation.
-- The **numeric values** (torque figures, dimensions, tolerances, final settings) that depend on a given hardware version.
-- The **wiring diagrams**, covered in [Guide 02 — Electronics](02_electronics.md).
-- The **firmware commands**, covered in [Guide 03 — Software](03_software.md).
+---
 
 ## Safety and good practices
 
-- Never assemble the machine while it is powered: the mechanical review must be **finished and validated** before any power supply is connected.
-- Follow the **tightening instructions** and never force a part: a screw that binds signals an alignment problem.
-- Keep **tools, offcuts and screws** away from moving mechanisms and hot surfaces.
-- Wear **eye protection** during cutting, deburring or handling printed parts.
+- **Never power on** the machine until the mechanical review (Step 5) is completely validated.
+- Never force a binding screw or linear carriage; binding indicates a misalignment or frame squareness issue.
+- Keep tools, metal shavings, and loose screws away from belts, leadscrews, and electronics boards.
+
+---
 
 ## Related resources
 
